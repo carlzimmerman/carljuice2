@@ -20,6 +20,10 @@ def index
  b = DateTime.new(2027, 12, 22)
  @days_left = (b - a).to_i
 
+
+ @percent_richer = ((@btc_usd - 13000) / 13000)
+ @total_richer = (@percent_richer * 1000).to_d
+
 end
 
 def ticker

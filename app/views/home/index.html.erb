@@ -1,6 +1,6 @@
-<h1> Stats: Alex Gajewski vs. Carl Zimmerman - BTC </h1>
+<h1>Alex Gajewski vs. Carl Zimmerman - BTC </h1>
 <h2> $1,000 USD Bet that price of Bitcoin (BTC) will be greater/less than $13,000 on December 22nd, 2027 </h2>
-
+<h4> Stats: </h4>
 <br>
 Current Price of Bitcoin:
 <br>
@@ -31,4 +31,19 @@ Who is currently "in the money"?
 
 <% if @btc_usd < 13000 %>
 <%= "Alex Gajewski" %>
+<% end %>
+
+<% if @btc_usd > 13000 %>
+
+<br>
+<br>
+
+Additional facts and figures:
+<br>
+<br>
+
+If Alex had invested $1,000 into BTC at $13,000 on date of deal, he would be:
+<br>
+<br>
+<%= "$ #{@total_richer} richer" %>
 <% end %>
