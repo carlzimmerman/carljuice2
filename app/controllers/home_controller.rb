@@ -18,7 +18,10 @@ def index
 
  a = DateTime.now
  b = DateTime.new(2027, 12, 27)
+ c = DateTime.new(2017, 12, 22)
+
  @days_left = (b - a).to_i
+ @days_since = (a - c)
 
 
  @percent_richer = ((@btc_usd - 14700) / 14700)
