@@ -27,6 +27,9 @@ def index
 
 @jack_bet_price = (@btc_usd * 0.068)
 
+@additional_btc = (1000 / @btc_usd)
+
+
 end
 
 def ticker

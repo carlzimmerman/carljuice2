@@ -51,3 +51,23 @@ If Jack had invested $1,000 into BTC at $14,700 on date of deal, he would be:
 <br>
 <%= "$ #{@total_richer} richer" %>
 <% end %>
+
+<% if @btc_usd < 14700 %>
+<br>
+<br>
+Additional facts and figures:
+<br>
+<br>
+
+With Jack's $1000 winnings he will be able to buy himself:
+<br>
+<br>
+<%= "#{@additional_btc} BTC" %>
+<br>
+<br>
+For Carl to be back "in the money" BTC needs to rise:
+<br>
+<br>
+<%= (((14700 - @btc_usd) / 14700) * 100) %> percent or <%= (14700 - @btc_usd) %> USD
+
+<% end %>
