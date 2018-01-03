@@ -49,7 +49,7 @@ Additional facts and figures:
 If Jack had invested $1,000 into BTC at $14,700 on date of deal, he would be:
 <br>
 <br>
-<%= "$ #{@total_richer} richer" %>
+<%= "#{number_to_currency @total_richer} richer" %>
 <% end %>
 
 <% if @btc_usd < 14700 %>

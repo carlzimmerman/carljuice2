@@ -3,7 +3,7 @@ class HomeController < ApplicationController
 require 'json'
 require 'open-uri'
 require 'rest-client'
-require 'json'
+
 
 
 def index
@@ -12,8 +12,7 @@ def index
  response = RestClient.get base_url
  data = JSON.load response
  cool = data["USD"].first
- @btc_price = JSON.pretty_generate cool
- @btc_usd = @btc_price[12..20].to_d
+ @btc_usd = 13_000.0
 
 
  a = DateTime.now
