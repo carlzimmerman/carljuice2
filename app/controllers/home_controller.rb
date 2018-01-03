@@ -12,7 +12,8 @@ def index
  response = RestClient.get base_url
  data = JSON.load response
  cool = data["USD"].first
- @btc_usd = 13_000.0
+ @btc_usd = cool.last
+ 
 
 
  a = DateTime.now
